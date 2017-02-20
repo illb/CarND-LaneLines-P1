@@ -23,6 +23,15 @@ My pipeline consisted of 6 steps.
 * mask region of interest
 * find lines with hough
 
+My modified draw_lines() function
+
+* separate left and right lines
+* remove noise
+  * sum the vectors to find the mean slope
+  * eliminate lines much off the average slope
+* merge lines
+  * predict with a single line using linear regression
+
 ###2. Identify potential shortcomings with your current pipeline
 
 * cannot detect lanes like belows
@@ -32,5 +41,6 @@ My pipeline consisted of 6 steps.
 
 ###3. Suggest possible improvements to your pipeline
 
-* use deep neural network to detect lanes and objects
+* use deep neural network to detect lane segments and objects
+  * linear regression with lane segment centers
   * ensemble the results
