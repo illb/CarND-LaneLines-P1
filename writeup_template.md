@@ -30,6 +30,7 @@ My modified draw_lines() function
   * sum the vectors to find the mean slope
   * eliminate lines much off the average slope
 * merge lines
+  * convert lines to points with interpolation
   * predict with a single line using linear regression
 
 ###2. Identify potential shortcomings with your current pipeline
